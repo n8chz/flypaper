@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="fly.png" type="image/x-icon"/>
+    <title>Bookmarks folders</title>
+    <style type="text/css">
+        body {
+            font-family:sans;
+            color:#1d4f17;
+            background:#dfefcf;
+        }
+        .popout {
+            margin-left: 1em;
+        }
+        .plus:before {
+            content: "\229e";
+            color: #24483f;
+            background: #adc8d1;
+            cursor: default;
+        }
+        .minus:before {
+            content: "\229f";
+            color: #1c2210;
+            background: #ed9be6;
+            cursor: default;
+        }
+        .match {
+            margin-left: 1em;
+            color: #13165f;
+            background: #f4e89c;
+        }
+        ul {
+            color: #276b0b;
+            background: #e4e0cb;
+        }
+        .minus .newfolder {
+            visibility: visible;
+        }
+        .plus .newfolder {
+            visibility: hidden;
+        }
+        button {
+            cursor:default;
+        }
+    </style>
+</head>
+
+<body>
+<ul><li>Click on the "+" to the left the name of a closed folder to view subfolders.</li>
+<li>Click on the edit button to the right of a folder name to edit flypaper text.</li>
+<li>Click <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions?redirectlocale=en-US&redirectslug=JavaScript%2FGuide%2FRegular_Expressions#Writing_a_Regular_Expression_Pattern" target="_blank">here</a> for help with regular expressions, but <strong>do not</strong> enclose your flypaper expressions in /slashes/.</li>
+<li>Simple practical example: <code>flypaper|muscipula|nepenthaceae</code> will match any of those three words.</li>
+<li>These will be applied without case sensitivity.  Capitalization is irrelevant.</li></ul>
+<div id="root">
+</div>
+</body>
+</html>
